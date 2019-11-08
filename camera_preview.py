@@ -6,6 +6,7 @@ import picamera
 from time import sleep
 
 with picamera.PiCamera() as camera:
+    camera.stop_preview()
     camera.resolution = (1440, 1080)
     camera.awb_mode = 'incandescent'
     camera.shutter_speed = 8000
@@ -17,3 +18,4 @@ with picamera.PiCamera() as camera:
     while True:
         sleep(1)
 
+camera.stop_preview()

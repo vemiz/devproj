@@ -13,9 +13,9 @@ def natural_keys(text):
     return [atoi(c) for c in re.split('(\d+)', text)]
 
 
-pathIn = 'C:/Batchelor/Data/IRL/Timelapses/groot/'
-pathOut = 'C:/Batchelor/Data/IRL/Timelapses/grootlapse.avi'
-fps = 12
+pathIn = 'C:/Batchelor/Data/IRL/Timelapses/buttontest2/'
+pathOut = 'C:/Batchelor/Data/IRL/Timelapses/fail_small_cube_lapse.avi'
+fps = 30
 frame_array = []
 files = [f for f in os.listdir(pathIn) if isfile(join(pathIn, f))]
 # for sorting the file names properly
